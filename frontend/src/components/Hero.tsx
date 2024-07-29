@@ -1,5 +1,5 @@
 import hero from "../assets/hero.png";
-import { Button } from "./ui/button";
+
 
 const Hero = () => {
   return (

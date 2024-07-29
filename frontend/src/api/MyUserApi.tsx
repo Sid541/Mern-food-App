@@ -32,7 +32,7 @@ export const useGetMyUser = () => {
     error,
   } = useQuery("fetchCurrentUser", getMyUserRequest);
 
-  if (error) {
+  if (error) {-
     toast.error(error.toString());
   }
 
