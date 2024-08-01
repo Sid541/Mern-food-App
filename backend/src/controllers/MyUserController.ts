@@ -19,9 +19,7 @@ const getCurrentUser = async (req: Request, res: Response) => {
 const createCurrentUser = async (req: Request, res: Response) => {
   try {
     const { auth0Id,name, email} = req.body;
-    console.log(auth0Id);
-    console.log(name);
-    console.log(email);
+    
     const existingUser = await User.findOne({ auth0Id });
 
     if (existingUser) {
